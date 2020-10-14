@@ -1,0 +1,149 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  color: white;
+  margin-top: 25px;
+}
+
+#mazeContainer {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  top: 75px;
+  opacity: 0;
+  display: inline-block;
+  background-color: rgba(35, 213, 171, 0.5);
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+#mazeContainer #mazeCanvas {
+  margin: 0;
+  display: block;
+  border: solid 2px rgba(0, 0, 0, 0.7);
+}
+
+input {
+  -webkit-transition-property: background-color opacity;
+  transition-property: background-color opacity;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 45px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+input:focus {
+  outline: none;
+}
+
+option {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-border {
+  border: 2px solid white;
+}
+
+#Message-Container {
+  visibility: hidden;
+  color: white;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#Message-Container #message {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+
+#page {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+#page #menu {
+  margin: auto;
+  padding: 10px;
+  height: 65px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#page #menu h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+
+#page #view {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+#gradient_bg {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(-45deg, #23A6D5, #EE7752, #23D5AB);
+  background-size: 100% 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+/*# sourceMappingURL=styles.css.map */

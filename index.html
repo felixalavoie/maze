@@ -1,0 +1,33 @@
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Maze</title>
+  <body>
+    <div id="gradient_bg"></div>
+    <div id="page">
+      <h1>MAZE</h1>
+      <div id="menu">
+        <input class="menu-border" id="startMazeBtn" type="button" onclick="makeMaze()" value="New Maze" />
+
+        <div id="Message-Container">
+          <div id="message">
+            <h2>BRAVO!</h2>
+            <p>You have completed the maze.</p>
+            <p id="moves"></p>
+            <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container'); makeMaze()" value="Go again!" />
+          </div>
+        </div>
+      </div>
+      <div id="view">
+        <div id="mazeContainer">
+          <canvas id="mazeCanvas" height="1100" width="1100"></canvas>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="maze.js"></script> 
+  </body>
+</html>
